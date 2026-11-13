@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusPulse | Smart Campus</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">CampusPulse</div>
+
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+            </ul>
+
+            <div class="nav-buttons">
+                <a href="/login" class="login-btn">Login</a>
+                <a href="/register" class="register-btn">Register</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Make Your Campus Better with CampusPulse</h1>
+
+            <p>
+                A smart platform to report campus problems,
+                track complaints and improve your campus experience.
+            </p>
+
+            <a href="/login" class="primary-btn">Report an Issue</a>
+            <a href="#features" class="secondary-btn">Explore Features</a>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="overview">
+        <h2>About CampusPulse</h2>
+
+        <p>
+            CampusPulse connects students and administrators
+            through a simple complaint management platform.
+            Students can report problems and administrators
+            can take action to resolve them.
+        </p>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <h2>Our Features</h2>
+
+        <div class="feature-container">
+
+            <div class="feature-card">
+                <h3>Report Issues</h3>
+                <p>Report campus problems with descriptions and photographs.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Track Complaints</h3>
+                <p>Track the progress of submitted complaints.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Priority Management</h3>
+                <p>Administrators can assign priority to complaints.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Smart Analytics</h3>
+                <p>Understand campus problems through visual reports.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <h2>How It Works</h2>
+
+        <div class="steps">
+            <div>1. Register or Login</div>
+            <div>2. Report a Problem</div>
+            <div>3. Admin Reviews</div>
+            <div>4. Track Resolution</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 CampusPulse. Smart Campus Problem Reporting Platform.</p>
+    </footer>
+
+</body>
+</html>

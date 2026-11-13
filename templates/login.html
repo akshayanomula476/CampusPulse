@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | CampusPulse</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body class="auth-body">
+
+    <div class="auth-container">
+
+        <h1 class="auth-logo">CampusPulse</h1>
+
+        <div class="auth-card">
+
+            <h2>Welcome Back!</h2>
+            <p>Login to your CampusPulse account.</p>
+
+            {% if message %}
+                <p class="auth-message">{{ message }}</p>
+            {% endif %}
+
+            <form action="/login" method="POST">
+
+                <label>Email Address</label>
+                <input type="email" name="email"
+                placeholder="Enter your email" required>
+
+                <label>Password</label>
+                <input type="password" name="password"
+                placeholder="Enter your password" required>
+
+                <button type="submit" class="auth-button">
+                    Login
+                </button>
+
+            </form>
+
+            <p class="auth-switch">
+                Don't have an account?
+                <a href="/register">Register</a>
+            </p>
+
+            <a href="/" class="back-home">Back to Home</a>
+
+        </div>
+    </div>
+
+</body>
+</html>
